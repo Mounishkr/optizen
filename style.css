@@ -1,18 +1,21 @@
-/* Custom animations and styles */
+/* Animations and responsive enhancements */
 h1 {
-    animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
   }
-  
-  button:hover {
-    transform: scale(1.05);
-  }
-  
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#menu-btn:focus + #menu {
+  display: block;
+}
