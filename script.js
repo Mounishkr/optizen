@@ -1,2 +1,7 @@
-// Add any JavaScript functionalities if required
-console.log("Website loaded successfully!");
+// Toggle the mobile menu
+const menuBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+
+menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+});
